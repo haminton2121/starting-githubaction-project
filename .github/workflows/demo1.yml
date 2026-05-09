@@ -1,6 +1,10 @@
 name: Events Demo 1
 on:
   push:
+    types:
+      - opened
+      - edited
+      - closed
     branches:
       - master
   workflow_dispatch:
