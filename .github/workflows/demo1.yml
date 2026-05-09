@@ -1,5 +1,10 @@
 name: Events Demo 1
-on: ...
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
